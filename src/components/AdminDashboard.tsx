@@ -21,7 +21,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ appointments, se
             SISTEMA SAAS DE GESTÃO
           </span>
           <h2 className="text-2xl font-black text-white mt-1">
-            Painel da Barbearia do João
+            Painel da Seu João Barber e Alemão
           </h2>
           <p className="text-xs text-gray-400">Visão geral do estabelecimento, serviços cadastrados e notificações WhatsApp Meta Cloud API</p>
         </div>

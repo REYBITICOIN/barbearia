@@ -19,7 +19,7 @@ export const sendWhatsAppConfirmation = async (params: SendWhatsAppParams): Prom
     dateStr,
     timeStr,
     barberName,
-    shopName = 'Barbearia do João'
+    shopName = 'Seu João Barber e Alemão'
   } = params;
 
   const cleanPhone = sanitizePhone(clientPhone);

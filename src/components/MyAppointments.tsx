@@ -15,7 +15,7 @@ export const MyAppointments: React.FC<MyAppointmentsProps> = ({ appointments, on
         <div className="flex items-center justify-between mb-8">
           <div>
             <h2 className="text-2xl font-black text-white">Meus Agendamentos</h2>
-            <p className="text-xs text-gray-400">Histórico de horários e confirmações da Barbearia do João</p>
+            <p className="text-xs text-gray-400">Histórico de horários e confirmações da Seu João Barber e Alemão</p>
           </div>
           <button
             onClick={onOpenBooking}
@@ -41,7 +41,7 @@ export const MyAppointments: React.FC<MyAppointmentsProps> = ({ appointments, on
           <div className="space-y-4">
             {appointments.map((apt) => {
               const cleanPhone = sanitizePhone(apt.clientPhone);
-              const waMessage = encodeURIComponent(`Olá ${apt.clientName}! Confirmando seu agendamento na Barbearia do João para ${apt.dateTimeStr} com ${apt.barberName}.`);
+              const waMessage = encodeURIComponent(`Olá ${apt.clientName}! Confirmando seu agendamento na Seu João Barber e Alemão para ${apt.dateTimeStr} com ${apt.barberName}.`);
               const waUrl = `https://wa.me/${cleanPhone}?text=${waMessage}`;
 
               return (

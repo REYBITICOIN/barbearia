@@ -86,7 +86,7 @@ export const BookingFlowModal: React.FC<BookingFlowModalProps> = ({
               <Scissors className="w-4 h-4" />
             </div>
             <div>
-              <h3 className="font-bold text-sm text-white">Barbearia do João</h3>
+              <h3 className="font-bold text-sm text-white">Seu João Barber e Alemão</h3>
               <p className="text-xs text-gray-400">Novo Agendamento Online</p>
             </div>
           </div>
@@ -277,7 +277,7 @@ export const BookingFlowModal: React.FC<BookingFlowModalProps> = ({
             </div>
             <h3 className="text-xl font-black text-white">Agendamento Confirmado!</h3>
             <p className="text-xs text-gray-300 max-w-sm mx-auto">
-              Seu horário na <strong className="text-white">Barbearia do João</strong> foi registrado com sucesso.
+              Seu horário na <strong className="text-white">Seu João Barber e Alemão</strong> foi registrado com sucesso.
             </p>
 
             <div className="p-3 rounded-xl bg-[#0A0A0C] border border-[#22242B] text-xs text-emerald-400 font-semibold">

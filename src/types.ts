@@ -5,6 +5,7 @@ export interface Service {
   durationMinutes: number;
   category: string;
   description: string;
+  imageUrl?: string;
 }
 
 export interface Barber {

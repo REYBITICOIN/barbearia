@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
                 <Scissors className="w-4 h-4" />
               </div>
               <span className="font-black text-sm text-white tracking-wide">
-                BARBEARIA DO JOÃO
+                SEU JOÃO BARBER
               </span>
             </div>
             <p className="text-gray-400">
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
           {/* Copyright */}
           <div className="space-y-2">
             <h4 className="font-bold text-white text-sm">Sistema SaaS</h4>
-            <p>© {new Date().getFullYear()} Barbearia do João. Todos os direitos reservados.</p>
+            <p>© {new Date().getFullYear()} Seu João Barber e Alemão. Todos os direitos reservados.</p>
           </div>
 
         </div>

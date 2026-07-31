@@ -67,41 +67,52 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ services, onSe
           {filteredServices.map((service) => (
             <div
               key={service.id}
-              className="group relative rounded-2xl bg-[#121316] border border-[#22242B] p-6 hover:border-[#D4AF37]/50 transition-all hover:shadow-xl hover:shadow-[#D4AF37]/10 flex flex-col justify-between"
+              className="group relative rounded-2xl bg-[#121316] border border-[#22242B] overflow-hidden hover:border-[#D4AF37]/50 transition-all hover:shadow-xl hover:shadow-[#D4AF37]/10 flex flex-col justify-between"
             >
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#0A0A0C] border border-[#22242B] flex items-center justify-center">
-                    {CATEGORY_ICONS[service.category] || <Scissors className="w-5 h-5 text-[#D4AF37]" />}
-                  </div>
-                  <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#0A0A0C] border border-[#22242B] text-gray-400">
-                    {service.durationMinutes} min
-                  </span>
+              {service.imageUrl && (
+                <div className="h-48 w-full overflow-hidden">
+                  <img
+                    src={service.imageUrl}
+                    alt={service.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
-
-                <h3 className="text-lg font-bold text-white group-hover:text-[#D4AF37] transition-colors">
-                  {service.name}
-                </h3>
-                <p className="text-xs text-gray-400 mt-2 line-clamp-2 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-[#22242B] flex items-center justify-between">
+              )}
+              <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <span className="text-xs text-gray-500 block">Valor</span>
-                  <span className="text-xl font-black text-[#D4AF37]">
-                    R$ {service.price.toFixed(2).replace('.', ',')}
-                  </span>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-10 h-10 rounded-xl bg-[#0A0A0C] border border-[#22242B] flex items-center justify-center">
+                      {CATEGORY_ICONS[service.category] || <Scissors className="w-5 h-5 text-[#D4AF37]" />}
+                    </div>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#0A0A0C] border border-[#22242B] text-gray-400">
+                      {service.durationMinutes} min
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#D4AF37] transition-colors">
+                    {service.name}
+                  </h3>
+                  <p className="text-xs text-gray-400 mt-2 line-clamp-2 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
 
-                <button
-                  onClick={() => onSelectService(service)}
-                  className="px-4 py-2 rounded-xl text-xs font-bold bg-[#D4AF37]/15 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-black border border-[#D4AF37]/30 transition-all flex items-center space-x-1.5"
-                >
-                  <Check className="w-4 h-4" />
-                  <span>Agendar</span>
-                </button>
+                <div className="mt-6 pt-4 border-t border-[#22242B] flex items-center justify-between">
+                  <div>
+                    <span className="text-xs text-gray-500 block">Valor</span>
+                    <span className="text-xl font-black text-[#D4AF37]">
+                      R$ {service.price.toFixed(2).replace('.', ',')}
+                    </span>
+                  </div>
+
+                  <button
+                    onClick={() => onSelectService(service)}
+                    className="px-4 py-2 rounded-xl text-xs font-bold bg-[#D4AF37]/15 hover:bg-[#D4AF37] text-[#D4AF37] hover:text-black border border-[#D4AF37]/30 transition-all flex items-center space-x-1.5"
+                  >
+                    <Check className="w-4 h-4" />
+                    <span>Agendar</span>
+                  </button>
+                </div>
               </div>
             </div>
           ))}

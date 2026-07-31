@@ -25,7 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking, activeTab, setAct
             </div>
             <div>
               <h1 className="text-lg font-black tracking-wide text-white group-hover:text-[#D4AF37] transition-colors">
-                BARBEARIA DO JOÃO
+                SEU JOÃO BARBER
               </h1>
               <p className="text-xs font-semibold text-[#D4AF37] tracking-wider uppercase">
                 Corte Moderno e Clássico

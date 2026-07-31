@@ -6,7 +6,7 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIU
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export const DEFAULT_BARBERSHOP = {
-  name: 'Barbearia do João',
+  name: 'Seu João Barber e Alemão',
   slogan: 'Corte Moderno e Clássico',
   description: 'Barbearia especializada em cortes modernos, degradês e cortes clássicos tradicionais.',
   phone: '(11) 98877-6655',
