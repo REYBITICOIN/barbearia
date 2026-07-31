@@ -64,7 +64,7 @@ export const sendWhatsAppConfirmation = async (params: SendWhatsAppParams): Prom
   };
 };
 
-export const sanitizePhone = (phone: String): string => {
+export const sanitizePhone = (phone: string): string => {
   const digits = phone.replace(/[^0-9]/g, '');
   if (!digits.startsWith('55') && (digits.length === 10 || digits.length === 11)) {
     return `55${digits}`;
