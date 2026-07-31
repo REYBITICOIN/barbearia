@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Golden Scissors & Razor Barber Badge -->
+    <path
+        android:pathData="M54,24 L74,38 L74,68 L54,82 L34,68 L34,38 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#D4AF37"
+        android:fillColor="#22D4AF37" />
+    
+    <!-- Left Blade -->
+    <path
+        android:pathData="M42,34 L58,62 M40,32 C37,30 32,32 32,36 C32,40 37,42 40,38 L48,50"
+        android:strokeWidth="3"
+        android:strokeColor="#FFDF00"
+        android:strokeLineCap="round" />
+
+    <!-- Right Blade -->
+    <path
+        android:pathData="M66,34 L50,62 M68,32 C71,30 76,32 76,36 C76,40 71,42 68,38 L60,50"
+        android:strokeWidth="3"
+        android:strokeColor="#FFDF00"
+        android:strokeLineCap="round" />
+
+    <!-- AI Sparkle Core -->
+    <path
+        android:pathData="M54,48 L56,52 L60,54 L56,56 L54,60 L52,56 L48,54 L52,52 Z"
+        android:fillColor="#00E5FF" />
+</vector>

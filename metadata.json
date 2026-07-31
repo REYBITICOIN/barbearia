@@ -1,0 +1,6 @@
+{
+  "name": "Barbearia do João",
+  "description": "Barbearia do João - Corte Moderno e Clássico. Especializada em cortes modernos, degradês e cortes clássicos tradicionais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
